@@ -2,6 +2,10 @@ import java.util.*;
 public class Day3 {
     public static void main(String[] args){
 
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a number");
+        int n=sc.nextInt();
+
         //loops 
         
 
@@ -110,12 +114,147 @@ public class Day3 {
 //     i++;
 // }
 
+//reverse even numbers
+
+// int n=10;
+// for(int i=n;i>0;i--){
+//     if(i%2==0){
+//         System.out.println(i);
+//     }
+// }
+
+
+//odd numbers in reverse
+// int n=10;
+// for(int i=n;i>=0;i--){
+//     System.out.println(i*2+1);
+// }
+
+//square of n numbers 
+// int n=10;
+// for(int i=1;i<=n;i++){
+//     System.out.println("square of "+i+" is "+(i*i));
+// }
+
+
+//cubes of numbers 
+//  int n=10;
+// for(int i=1;i<=n;i++){
+//     System.out.println("cube of "+i+" is "+(i*i*i));
+// }
+
+
+
+//write program to print table of N
+
+// int n=5;
+// for(int i=1;i<=10;i++){
+//     System.out.println(n+" X "+i+" = "+(n*i));
+// }
+
+//write program to get sum of N natural numbers 
+
+// int sum=0;
+// for(int i=1;i<=n;i++){
+//     sum+=i;
+// }
+//         System.out.println("sum of first "+n+" natural numbers is "+sum);
+
+
+
+//calculate sum of first N even natural numbers 
+
+// int sum=0;
+// for(int i=1;i<=n;i++){
+//     sum+=i*2;
+// }
+// System.out.println("sum of first "+n+" even natural numbers is "+sum);
+
+
+
+//calculate sum of first N odd natural numbers 
+// int sum=0;
+// for(int i=1;i<=n;i++){
+//     if(i%2!=0){
+//         sum+=i;
+//     }
+// }
+// System.out.println("sum of first "+n+" odd natural numbers is "+sum);
+
+
+
+  //calculate factorial of numbers 
+
+  
+  
+// int fac=1;
+// for(int i=1;i<=n;i++){
+//     fac*=i;
+// }
+// System.out.println("factoriral of "+n+" is " +fac);
+
+
+//count digits 
+// int count =0;
+// while(n>0){
+//     n/=10;
+//     count++;
+// }
+// System.out.println("number of digits of the number is "+count);
+
+
+
+//prime or not
+// boolean isPrime=true;
+// if(n<=1){
+//     isPrime=false;
+    
+// }else{
+// for(int i=2;i<=Math.sqrt(n);i++){
+//     if(n%i==0){
+//         isPrime=false;
+//     }
+// }
+// }
+
+// if(isPrime){
+//     System.out.println("prime number");
+// }else{
+//     System.out.println("not prime number");
+// }
+
+
+//find the lcm 
+
+// int a =sc.nextInt();
+// int b =sc.nextInt();
+// int gcd=Gcd(a,b);
+// int lcm=(a*b)/gcd;
+// System.out.println("lcm of "+a+" and "+b+" is "+lcm);
+
+
+//reverse a number 
+// int rev=0;
+// while(n>0){
+//     rev=n%10;
+//     n/=10;
+//     System.out.print(rev);
+// }
 
 
 
 
 
+    }
 
+    public static int Gcd(int a ,int b){
+        while(b!=0){
+            int temp=b;
+            b=a%b;
+            a=temp;
+
+        }
+        return a;
     }
     
 }

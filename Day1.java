@@ -55,6 +55,46 @@ public class Day1 {
         // System.out.println("total marks are "+total+" percentage is "+percentage+"%");
 
 
+
+        //simple intrest calculator 
+        // int p,t,r;
+        // System.out.println("enter principal amount , time and rate of intrest after space");
+        // p=sc.nextInt();
+        // t=sc.nextInt();
+        // r=sc.nextInt();
+        // double si=(p*t*r)/100.0;
+        // System.out.println("simple intrest is "+si);
+
+        //celcius to fahrenheit
+        // double c,f;
+        // System.out.println("enter temperature in celcius ");
+        // c=sc.nextDouble();
+        // f=(c*1.8)+32;
+        // System.out.println("temperature in fahrenheit is "+f);
+
+
+        //bmi calculator and tell them theuy are underweight , normal weight , overweight or obese
+
+        // double w,h,bmi;
+        // System.out.println("enter your weight in kg and height in meter after space");
+        // w=sc.nextDouble();
+        // h=sc.nextDouble();
+        // bmi=w/(h*h);
+        // System.out.println("your bmi is "+bmi);
+        // if(bmi<18.5){
+        //     System.out.println("you are underweight");
+        // }else if(bmi>=18.5 && bmi<25){
+        //     System.out.println("you are normal weight");
+        // }else if(bmi>=25 && bmi<30){
+        //     System.out.println("you are overweight");
+        // }else{
+        //     System.out.println("you are obese");
+        // }
+
+
+        //
+
+
     }
     public static int sum(int a ,int b){
         int res=a+b;
