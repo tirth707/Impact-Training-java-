@@ -95,10 +95,72 @@ public class Day1 {
         //
 
 
+        //generate bill
+
+        // int n,i,q,p;
+        // System.out.println("enter number of items , item id , quantity and price after space");
+        // n=sc.nextInt();
+        // i=sc.nextInt();
+        // q=sc.nextInt(); 
+        // p=sc.nextInt();
+        // int total=bill(n,i,q,p);
+        // System.out.println("total bill is "+total);
+
+
+        //name and age inout an dtell then who is them 
+
+        // int age ;
+        // String name;
+        // System.out.println("enter your name ");
+        // name=sc.nextLine();
+        // System.out.println("enter your age ");
+        // age=sc.nextInt();
+        // if(age<=12){
+        //     System.out.println("hello"+name +" you are a child ");
+
+        // }else if(age>12 && age<=19){
+        //     System.out.println("hello"+name +" you are a teenager ");
+        // }else if(age>19 && age<=35){
+        //     System.out.println("hello"+name +"you are a young adult ");
+        // }else{
+        //     System.out.println("hello"+name +" you are an adult ");  
+        // }
+
+
+
+        //take name ,company and salary and wish them for their dream job
+        
+        String name ,company;
+        int salary;
+        System.out.println("enter your name , company and salary after space");
+        name=sc.nextLine();
+        company=sc.nextLine();
+        salary=sc.nextInt();
+        System.out.println("hello "+name+"i wish that may you are hard working and you will get your dream package of "+salary+" LPA in your dream company "+company);
+        
+
+
+
+
+
+
+
+
+
     }
     public static int sum(int a ,int b){
         int res=a+b;
         return res;
+    }
+
+    public static int bill(int n,int i,int q,int p ){
+        int total=0;
+        while(n>=0){
+            total=(q*p);
+            n--;
+        }
+        return total;
+
     }
 
     
