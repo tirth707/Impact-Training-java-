@@ -72,6 +72,73 @@ public class Day5 {
 
     }
 
+    public static boolean isPrime(int n){
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+
+    }
+
+    //table
+
+    public static int table(int n){
+        for(int i=1;i<=10;i++){
+            System.out.println(n+" X "+i+" = "+(n*i));
+        }
+        return 0;
+    }
+
+    //reverse a number
+
+    public static int Reverse(int n){
+        int rev=0;
+        while(n>0){
+            rev=n%10;
+            n/=10;
+            System.out.print(rev);
+        }
+        return rev;
+    }
+
+    //Factorial of a number 
+
+    public static void Fact(int n){
+        int total=1;
+        for(int i=1;i<=n;i++){
+            total*=i;
+            
+
+        }
+        System.out.println( "Factorial of "+n+" is " +total);
+    }
+
+    //find max opf three numbers 
+    public static void max(int a,int b ,int c){
+        if(a>b & a>c){
+            System.out.println(a+" is greatest number");
+        }else if(b>a && b>c){
+            System.out.println(b+" is greatest number");
+        }else if(c>a && c>b){
+            System.out.println(c+" is greatest number");
+        
+        }else{
+            System.out.println("all numbers are equal");
+        }
+    }
+
+    public static void fib(int n){
+        int a=0,b=1;
+        for(int i=0;i<=n;i++){
+            System.out.println(" "+a);
+            int temp=a+b;
+            a=b;
+            b=temp;
+        }
+    }
+
     
     //MAIN FUNTION
     //code execution start from here 
@@ -109,7 +176,53 @@ public class Day5 {
         //     System.out.println("number is odd");
         // }
 
-        
+
+        //prime or not 
+
+        // if(isPrime(n)){
+        //     System.out.println("number is prime");
+        // }else{
+        //     System.out.println("number is not prime");
+        // }
+
+        //table 
+
+        // table(n);
+
+
+
+        //reverse
+
+        // Reverse(n);
+
+
+
+        //factorial of. a number 
+        // Fact(n);
+
+
+        //max of three numbers 
+        // max(a,b,n);
+
+
+        //fibonacci series of n terms 
+
+        // fib(n);
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
