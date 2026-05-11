@@ -139,6 +139,40 @@ public class Day5 {
         }
     }
 
+    public static void cal(){
+        System.out.println("write 1 for aaddtion 2 for subtraction 3 for multiplication 4 for division 5 for modulus 6 for exit ");
+        Scanner sc= new Scanner(System.in);
+
+        int choice = sc.nextInt();
+        int a,b;
+        System.out.println("enter two numbers");
+        a=sc.nextInt();
+        b=sc.nextInt();
+    
+        switch(choice){
+            case 1:
+                System.out.println(a+" + "+b+" = "+(a+b));
+                break;
+            case 2:
+                System.out.println(a+" - "+b+" = "+(a-b));
+                break;
+            case 3:
+                System.out.println(a+" * "+b+" = "+(a*b)); 
+                break;
+            case 4:
+                System.out.println(a+" / "+b+" = "+(a/b));
+                break;
+            case 5:
+                System.out.println(a+" % "+b+" = "+(a%b));
+                break;
+            case 6:
+                System.out.println("exiting the calculator");
+                break;
+            default:
+                System.out.println("invalid choice");
+        }
+    }
+
     
     //MAIN FUNTION
     //code execution start from here 
@@ -161,10 +195,10 @@ public class Day5 {
         //question 1
 
         int a,b,n;
-        System.out.println("enter numbers");
+        // System.out.println("enter numbers");
         // a=sc.nextInt();
         // b=sc.nextInt();
-        n=sc.nextInt();
+        // n=sc.nextInt();
 
 
         // int sum= addition(a,b);
@@ -209,7 +243,7 @@ public class Day5 {
 
         // fib(n);
 
-         
+         cal();
 
 
 
