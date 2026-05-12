@@ -14,7 +14,7 @@ public class Array {
         
 
 
-        int[] marks=new int[5];
+        
         // marks[0]=80;
         // marks[1]=90;
         // marks[2]=70;
@@ -22,7 +22,25 @@ public class Array {
 
         // System.out.println(marks[0]);
 
+        //q1()
+//q2();
 
+//q3();
+// q4();
+// q5();
+
+
+        
+
+
+
+    }
+
+
+
+    //print n number of element in array
+    public static void q1(){
+        int[] marks=new int[5];
 
         Scanner sc=new Scanner(System.in);
         for(int i=0;i<marks.length;i++){
@@ -39,6 +57,123 @@ public class Array {
         }
 
 
+
+
+    }
+
+
+    //print all elements of array in. reverse order
+
+    public static void q2(){
+         Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int size=sc.nextInt();
+        int[] arr=new int[size];
+       
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.println("enter elements  " + (i + 1));
+            arr[i]=sc.nextInt();
+        
+
+            
+
+        }
+        System.out.println("elements of array are :");
+        for(int i=arr.length-1;i>=0;i--){
+            System.out.println("" + (i + 1) + " is " + arr[i]);
+        }
+
+
+
+    }
+
+
+    //input 10 numbers in. the array and print the even numbers 
+    public static void q3(){
+
+         Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int size=sc.nextInt();
+        int[] arr=new int[size];
+       
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.println("enter elements  " + (i + 1));
+            arr[i]=sc.nextInt();
+        
+
+            
+
+        }
+        System.out.println("elements of array are :");
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2==0){
+                System.out.println("the even number in array are   is " + arr[i]);
+
+            }
+            
+        }
+
+        
+    }
+
+
+    //print odd numbers in array
+    public static void q4(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int size=sc.nextInt();
+        int[] arr=new int[size];
+       
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.println("enter elements  " + (i + 1));
+            arr[i]=sc.nextInt();
+        
+
+            
+
+        }
+        System.out.println("elements of array are :");
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2!=0){
+                System.out.println("the odd number in array are   is " + arr[i]);
+
+            }
+            
+        }
+    }
+
+
+    //find. the sum of all elements in array 
+
+    public static void q5(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of the array");
+        int size=sc.nextInt();
+        int[] arr=new int[size];
+        int sum=0;
+        
+        for(int i=0;i<arr.length;i++){
+            System.out.println("enter elements  " + (i + 1));
+            arr[i]=sc.nextInt();
+        
+
+            
+
+        }
+        System.out.println("elements of array are :");
+        for(int i=0;i<arr.length;i++){
+            
+                System.out.println("the even number in array are   is " + arr[i]);
+                sum+=arr[i];
+
+            
+            
+        }
+
+    System.out.println("thr sum of all number sof array is " + sum);
     }
     
 }
