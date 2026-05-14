@@ -1,7 +1,7 @@
 package Day7;
 import java.util.*;
 
-public class insertion {
+public class Day8 {
     public static void main(String[] args){
 
         // insert();
