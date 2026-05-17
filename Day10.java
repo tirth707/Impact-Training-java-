@@ -11,8 +11,9 @@ public class Day10 {
 // System.out.println(""+arr[0][1]);
 // mat();
 // matsum();
-maxmin();
-
+// maxmin();
+// q6();
+q7();
 
 
 
@@ -144,7 +145,100 @@ System.out.println("min of all elements: " + min);
     }
 
 
+    //odd or even in matrix
 
+    public static void q6(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number of rows and columns");
+        int row=sc.nextInt();
+       
+int col=sc.nextInt();
+
+        int[][] arr=new int[row][col];
+
+        System.out.println("enter elements of the matrix");
+        
+        
+
+        for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr[i].length;j++){
+
+        arr[i][j]=sc.nextInt();
+
+        
+    }
+}
+
+
+for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr[i].length;j++){
+        if(arr[i][j]%2==0){
+            System.out.println(arr[i][j]+" is even");
+        }else{
+            System.out.println(arr[i][j]+" is odd");
+        }
+
+    }
+}
+
+// for(int i=0;i<arr.length;i++){
+//     for(int j=0;j<arr[i].length;j++){
+//        if(arr[i][j]%2==0){
+//         System.out.print(arr[i][j]+" ");
+//        }else{
+//         System.out.print(arr[i][j]+"  ");
+//        }
+
+//         // System.out.print(arr[i][j]+" ");
+
+        
+//     }
+//     // System.out.println();
+// }
+
+    }
+
+
+
+
+
+public static void q7(){
+    Scanner sc=new Scanner(System.in);
+        System.out.println("enter number of rows and columns");
+        int row=sc.nextInt();
+       
+int col=sc.nextInt();
+
+        int[][] arr=new int[row][col];
+
+        System.out.println("enter elements of the matrix");
+        
+        
+
+        for(int i=0;i<arr.length;i++){
+    for(int j=0;j<arr[i].length;j++){
+
+        arr[i][j]=sc.nextInt();
+
+        
+    }
+}
+
+for(int i=0;i<arr.length;i++){
+    int sum=0;
+    for(int j=0;j<arr[i].length;j++){
+
+        sum+=arr[i][j];
+        System.out.print(arr[i][j]+" ");
+
+        
+    }
+    System.out.println();
+    System.out.println("Sum of all elements: " + sum);
+}
+
+
+}
 
 
 
