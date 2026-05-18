@@ -8,6 +8,9 @@ public class week2 {
         // insert(arr.length, 99, 3, arr);
         
     }
+
+    // insert elemet at specifc index (1-based indexing) in an array and print the new array
+
     public static void insert(int n, int x, int p, int[] arr ){
         int[] res=new int[n+1];
         for(int i=0;i<p-1;i++){
@@ -31,10 +34,12 @@ public class week2 {
 //res[p]=x; inserted elemt at position p
 // then again we wioll run loop from the element after p to n and we will insert the elements from the original array to the res array and then we will print the res array
 //for(int i=p;i<=n;i++).  so from index 3 to n+1 we will get the elements of that 
-        
-       
 
     }
+
+    
+
+    //hollow sqare pattern printing 
 
      public static void hollowsquare(int n){
         for(int i=0;i<n;i++){
